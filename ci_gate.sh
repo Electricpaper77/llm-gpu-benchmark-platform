@@ -2,12 +2,15 @@
 
 echo "Running evaluation pipeline..."
 
+# ensure server running
+curl -s http://localhost:8000 > /dev/null
+
 python run_eval.py
 python gate.py
 
 if [ $? -ne 0 ]; then
-  echo "❌ CI FAILED: Model did not pass evaluation"
+  echo "❌ CI FAILED"
   exit 1
 else
-  echo "✅ CI PASSED: Model approved for release"
+  echo "✅ CI PASSED"
 fi
