@@ -30,3 +30,15 @@ LLM inference benchmarking harness with reproducible load testing, JSONL logs, a
 - Improved model: ~90% pass rate → ✅ approved
 - Demonstrates real-world eval → regression → release workflow
 
+
+## Distributed Benchmark Results (Cloud Run)
+
+- p50 latency: ~0.057s
+- p95 latency: ~0.27s
+- throughput: ~6.8 req/sec
+- concurrency: 10 threads
+
+Notes:
+- Benchmarked via external API calls (Cloud Run endpoint)
+- Validates system performance under load before GPU scaling
+
