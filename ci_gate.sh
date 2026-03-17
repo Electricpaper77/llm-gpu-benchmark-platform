@@ -1,9 +1,6 @@
 #!/bin/bash
 
-echo "Running evaluation pipeline..."
-
-# ensure server running
-curl -s http://localhost:8000 > /dev/null
+echo "Running evaluation pipeline (Cloud Run)..."
 
 python run_eval.py
 python gate.py
@@ -12,5 +9,5 @@ if [ $? -ne 0 ]; then
   echo "❌ CI FAILED"
   exit 1
 else
-  echo "✅ CI PASSED"
+  echo "✅ CI PASSED (Cloud Run)"
 fi
