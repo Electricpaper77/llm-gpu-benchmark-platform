@@ -1,3 +1,12 @@
+
+# LLM Evaluation + Inference Benchmarking Platform
+
+Production-style system for LLM evaluation, CI gating, and distributed performance benchmarking (Cloud Run).
+
+- p50 latency: ~57ms | p95: ~270ms | throughput: ~6.8 req/sec
+- End-to-end eval → regression → release workflow
+- External API benchmarking under concurrent load
+
 ## GPU Readiness
 - Designed for GPU-backed inference (vLLM / PyTorch)
 - Benchmark harness validated on CPU (simulated load)
