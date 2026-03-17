@@ -51,3 +51,8 @@ Notes:
 - Benchmarked via external API calls (Cloud Run endpoint)
 - Validates system performance under load before GPU scaling
 
+
+## Cost Efficiency
+- Cloud Run (min instances = 0) → near-zero idle cost
+- Designed for cost-per-request optimization
+
