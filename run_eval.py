@@ -1,10 +1,12 @@
 import requests
 import json
 
+URL = "https://REPLACE_WITH_YOUR_URL/evaluate"
+
 results = []
 
 for _ in range(30):
-    r = requests.post("http://localhost:8000/evaluate")
+    r = requests.post(URL)
     data = r.json()
     results.append(data)
 

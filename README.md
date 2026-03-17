@@ -24,3 +24,9 @@ LLM inference benchmarking harness with reproducible load testing, JSONL logs, a
 - Runs regression tests + gating before deployment
 - Mimics production release validation workflow
 
+
+## Model Lifecycle Simulation
+- Initial model: 56% pass rate → ❌ rejected
+- Improved model: ~90% pass rate → ✅ approved
+- Demonstrates real-world eval → regression → release workflow
+
